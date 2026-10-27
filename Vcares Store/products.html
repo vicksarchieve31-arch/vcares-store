@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products | VCARES Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div id="top-bar">
+    <p>🚚 Free shipping on orders over ₦20,000 | 2-Year Warranty on all gadgets!</p>
+  </div>
+
+  <!-- MAIN HEADER / NAVIGATION BAR -->
+  <header id="main-header">
+    <div id="logo">
+      <a href="index.html">VCares</a>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div id="header-actions">
+      <a href="account.html" id="account-btn">Account</a>
+      <a href="cart.html" id="cart-btn">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </header>
+
+  <!-- PRODUCTS HERO / SEARCH BAR SECTION -->
+  <section id="products-header">
+    <h1>All Gadgets & Tech</h1>
+    <p>Browse through our collection of premium, durable tech devices.</p>
+    
+    <div id="search-box">
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search products by name or feature..." 
+        onkeyup="searchProducts()" 
+      />
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER TABS -->
+  <section id="category-filters">
+    <button class="filter-btn active" onclick="filterCategory('all', this)">All Items</button>
+    <button class="filter-btn" onclick="filterCategory('phones', this)">Phones</button>
+    <button class="filter-btn" onclick="filterCategory('audio', this)">Audio</button>
+    <button class="filter-btn" onclick="filterCategory('wearables', this)">Wearables</button>
+    <button class="filter-btn" onclick="filterCategory('accessories', this)">Accessories</button>
+    <button class="filter-btn" onclick="filterCategory('cameras', this)">Cameras</button>
+  </section>
+
+  <!-- MAIN PRODUCTS GRID -->
+  <section id="catalog-section">
+    <div id="catalog-grid">
+      <!-- Dynamically filled by products.js -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div id="footer-links">
+      <div>
+        <h4>VCares</h4>
+        <p>Your destination for durable, premium gadgets.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a><br>
+        <a href="cart.html">My Cart</a>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <a href="contact.html">Contact Us</a><br>
+        <a href="about.html">About VCARES</a>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <p>&copy; 2026 VCares. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
