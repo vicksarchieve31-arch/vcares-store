@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VCARES Store | Design That Sells. Gadgets That Last.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div id="top-bar">
+    <p>🚚 Free shipping on orders over ₦20,000 | 2-Year Warranty on all gadgets!</p>
+  </div>
+
+  <!-- MAIN HEADER / NAVIGATION BAR -->
+  <header id="main-header">
+    <div id="logo">
+      <a href="index.html">VCares</a>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div id="header-actions">
+      <a href="account.html" id="account-btn">Account</a>
+      <a href="cart.html" id="cart-btn">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div id="hero-content">
+      <h1>Design That Sells.<br>Gadgets That Last. <span>Victor Cares</span></h1>
+      <p>
+        Minimal, durable, and built for everyday innovation. Crafted with premium 
+        materials to perform elegantly — designed to look good and last for years.
+      </p>
+      <div id="hero-buttons">
+        <a href="products.html" id="explore-btn">Explore Products</a>
+        <a href="about.html" id="learn-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITIONS -->
+  <section id="features">
+    <div class="feature-item">
+      <span>✔️</span>
+      <h3>Premium Quality</h3>
+      <p>Built with high-grade durable materials.</p>
+    </div>
+    <div class="feature-item">
+      <span>🛡️</span>
+      <h3>2-Year Warranty</h3>
+      <p>Full protection on all hardware electronics.</p>
+    </div>
+    <div class="feature-item">
+      <span>🚚</span>
+      <h3>Free Shipping</h3>
+      <p>Fast and reliable doorstep delivery.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS PREVIEW -->
+  <section id="featured-products">
+    <h2>Featured Tech</h2>
+    <div id="products-grid">
+      <!-- Product Card 1: iPhone -->
+      <div class="product-card">
+        <div class="product-image">📱</div>
+        <h3>Apple iPhone 15 Pro</h3>
+        <p class="price">₦1,250,000</p>
+        <button onclick="addToCart('Apple iPhone 15 Pro', 1250000)">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 2: Wireless Headphones -->
+      <div class="product-card">
+        <div class="product-image">🎧</div>
+        <h3>Wireless Noise-Canceling Headphones</h3>
+        <p class="price">₦45,000</p>
+        <button onclick="addToCart('Wireless Headphones', 45000)">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 3: Smartwatch -->
+      <div class="product-card">
+        <div class="product-image">⌚</div>
+        <h3>Smartwatch Series X</h3>
+        <p class="price">₦35,000</p>
+        <button onclick="addToCart('Smartwatch Series X', 35000)">Add to Cart</button>
+      </div>
+
+      <!-- Product Card 4: Mechanical Keyboard -->
+      <div class="product-card">
+        <div class="product-image">⌨️</div>
+        <h3>Mechanical Gaming Keyboard</h3>
+        <p class="price">₦28,000</p>
+        <button onclick="addToCart('Mechanical Keyboard', 28000)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div id="footer-links">
+      <div>
+        <h4>VCares</h4>
+        <p>Your destination for durable, premium gadgets.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a><br>
+        <a href="cart.html">My Cart</a>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <a href="contact.html">Contact Us</a><br>
+        <a href="about.html">About VCARES</a>
+      </div>
+    </div>
+    <div id="footer-bottom">
+      <p>&copy; 2026 VCares. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
